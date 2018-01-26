@@ -8,8 +8,6 @@ const Item = ({ item, pokemon }) => {
       <Link to={`/pokemon/${pokemon.id}/items/${item.id}`}>
         {item.name}
       </Link>
-      <Route path="/pokemon/:pokemonId/items/:itemId"
-             component={ItemDetailContainer} />
     </section>
   );
 };

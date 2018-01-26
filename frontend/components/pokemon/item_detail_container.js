@@ -4,8 +4,7 @@ import { selectItem, selectSinglePokemon } from '../../reducers/selectors';
 import ItemDetail from './item_detail';
 
 const mapStateToProps = state => ({
-  item: selectItem(state),
-  pokemon: selectSinglePokemon(state)
+  item: selectItem(state)
 });
 
 const mapDispatchToProps = dispatch => ({

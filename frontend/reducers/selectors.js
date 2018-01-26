@@ -13,5 +13,5 @@ export const selectItems = (state) => {
 };
 
 export const selectItem = (state) => {
-  return state.entities.item;
+   return state.entities.items;
 };

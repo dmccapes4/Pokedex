@@ -1,6 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
 import Item from './item';
+import ItemDetailContainer from './item_detail_container';
+import { Route } from 'react-router-dom';
 
 class PokemonDetail extends React.Component {
   constructor(props) {
@@ -36,7 +38,8 @@ class PokemonDetail extends React.Component {
       <ul>
         {this.items.map(item => <Item key={item.id} item={item} pokemon={pokemon} />)}
       </ul>
-
+      <Route path="/pokemon/:pokemonId/items/:itemId"
+             component={ItemDetailContainer} />
 
       </section>
     );
