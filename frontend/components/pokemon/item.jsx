@@ -6,7 +6,7 @@ const Item = ({ item, pokemon }) => {
   return (
     <section className="items">
       <Link to={`/pokemon/${pokemon.id}/items/${item.id}`}>
-        <img src={item.image_url} width="30px" height="auto" />
+        <img src={item.image_url} width="45px" height="auto" />
       </Link>
     </section>
   );

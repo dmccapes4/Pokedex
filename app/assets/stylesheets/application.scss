@@ -150,4 +150,15 @@
 
  .items {
    display: inline-block;
+   margin: auto;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 4px;
+   margin-left: 4px;
+   margin-right: 4px;
+   opacity: 0.6;
+ }
+
+ .items:hover {
+   opacity: 1;
  }

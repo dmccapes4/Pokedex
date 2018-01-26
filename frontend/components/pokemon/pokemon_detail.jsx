@@ -35,9 +35,9 @@ class PokemonDetail extends React.Component {
           <li>Defense: {pokemon.defense}</li>
           {(pokemon.moves) ? (<li>Moves: {pokemon.moves.toString()}</li>) : ""}
       </ul>
-      <ul>
+      <div>
         {this.items.map(item => <Item key={item.id} item={item} pokemon={pokemon} />)}
-      </ul>
+      </div>
       <Route path="/pokemon/:pokemonId/items/:itemId"
              component={ItemDetailContainer} />
 
