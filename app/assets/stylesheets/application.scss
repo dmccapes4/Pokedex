@@ -41,15 +41,16 @@
 
  nav {
    width: 900px;
-   background-color: $red;
-   padding: 6px;
+   background-color: #eee;
+   // padding: 6px;
    display: flex;
-   justify-content: space-between;
+   justify-content:  flex-start;
    align-items: center;
 
    ul {
      display: flex;
      justify-content: flex-end;
+     padding: 0px;
 
      li {
        a {
@@ -102,4 +103,48 @@
    font-size: 24px;
    text-align: center;
    color: $black;
+ }
+
+.pokedex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokedetails {
+  padding: 50px;
+  width: 400px;
+  border: 1px dotted pink;
+  background-color: #eee;
+  border-radius: 6px;
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+  text-align: center;
+}
+
+.pokedetails ul li {
+  text-align: left;
+}
+
+.poke-list {
+ 	// border: 1px solid gray;
+ 	border-radius: 5px;
+ 	width: 150px;
+  height: 500;
+ 	background: #eee;
+ 	list-style: none;
+  padding: 0;
+  margin: 0;
+ }
+
+ .pokemon {
+ 	background: white;
+  margin: 0;
+ 	border: 1px solid #ccc;
+ 	border-radius: 5px;
+  width: 90%;
+  margin-left: 7px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
  }

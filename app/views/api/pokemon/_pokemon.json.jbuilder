@@ -1,2 +1,3 @@
 json.extract! pokemon, :id, :name, :attack, :defense, :poke_type,
-              :moves, :image_url
+              :moves
+json.image_url asset_path(pokemon.image_url)
