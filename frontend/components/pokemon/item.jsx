@@ -4,9 +4,9 @@ import ItemDetailContainer from './item_detail_container';
 
 const Item = ({ item, pokemon }) => {
   return (
-    <section>
+    <section className="items">
       <Link to={`/pokemon/${pokemon.id}/items/${item.id}`}>
-        {item.name}
+        <img src={item.image_url} width="30px" height="auto" />
       </Link>
     </section>
   );

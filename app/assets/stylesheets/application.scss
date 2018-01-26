@@ -116,9 +116,8 @@
   border: 1px dotted pink;
   background-color: #eee;
   border-radius: 6px;
-  height: 400px;
-  max-height: 400px;
   min-height: 400px;
+  max-height: 500px;
   text-align: center;
 }
 
@@ -147,4 +146,8 @@
   margin-bottom: 5px;
   margin-top: 5px;
 
+ }
+
+ .items {
+   display: inline-block;
  }
